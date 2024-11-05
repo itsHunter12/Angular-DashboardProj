@@ -1,0 +1,50 @@
+<h5>Latest Video Performance</h5>
+<div class="divider"></div>
+<img
+  src="../../assets/images/vecteezy_colored-line-banner-in-flat-style_21975928.png"
+  alt="No Image"
+/>
+<h4>{{ data.videoTitle | textLimit : 50 }}</h4>
+
+<div class="video-data">
+  <div class="views">
+    <span class="material-symbols-outlined"> equalizer </span>
+    <span> {{ data.views }} </span>
+  </div>
+  <div class="comments">
+    <span class="material-symbols-outlined"> chat </span>
+    <span> {{ data.comments }} </span>
+  </div>
+  <div class="likes">
+    <span class="material-symbols-outlined"> thumb_up </span>
+    <span> {{ data.likes }} </span>
+  </div>
+</div>
+<div class="divider"></div>
+
+<div class="ranking">
+  <h5>First 6 days 21 hours</h5>
+  <table>
+    <tr>
+      <td>Ranking By Views</td>
+      <td>{{ data.ranking }}</td>
+    </tr>
+    <tr>
+      <td>Views</td>
+      <td>{{ data.views }}</td>
+    </tr>
+    <tr>
+      <td>Impressions Click Through</td>
+      <td>{{ data.clickThrough }}</td>
+    </tr>
+    <tr>
+      <td>Average View Duration</td>
+      <td>{{ data.duration }}</td>
+    </tr>
+  </table>
+</div>
+
+<div class="links">
+  <a routerLink="/analytics"> Go to Video Analytics</a> <br />
+  <a routerLink="/comments"> See Comments</a>
+</div>

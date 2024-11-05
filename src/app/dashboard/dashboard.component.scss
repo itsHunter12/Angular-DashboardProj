@@ -1,0 +1,15 @@
+:host {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem 2rem;
+    max-width: 1000px;
+}
+
+audience-chart {
+    grid-row: 2/4;
+    height: max-content;
+}
+
+subscribers-watchtime-chart, views-revenue-chart {
+    grid-column: 2/4;
+}

@@ -1,0 +1,48 @@
+img{
+width: 100%;
+margin-top: 1rem;
+}
+
+h4{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+
+.video-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0 0.5rem;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+.ranking{
+    margin-top: 0.5rem;
+
+    table {
+        margin: 0.5rem 0;
+        width: 100%;
+        td {
+            font-size: 1rem;
+        }
+    }
+}
+
+.links{
+    a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        &:hover {
+            border-bottom: 1px solid rgb(0, 113, 189);
+        }
+    }
+}
