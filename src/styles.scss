@@ -26,3 +26,14 @@ app-root {
     height: 1px;
     background-color: var(--light-black);
 }
+
+.links {
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+            border-bottom: 1px solid rgb(0, 113, 189);
+        }
+    }
+}

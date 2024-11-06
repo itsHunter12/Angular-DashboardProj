@@ -1,1 +1,16 @@
-<p>latest-comments works!</p>
+<h3>Latest Comments</h3>
+<div class="divider"></div>
+@for (item of data; track data) {
+<section>
+  <img src="../../assets/images/profile.png" alt="" />
+  <div class="content">
+    <h6>{{ item.username }}</h6>
+    <h6>{{ item.comment | textLimit : 50 }}</h6>
+  </div>
+  <img src="../../assets/images/thumbnail.png" alt="" />
+</section>
+}
+
+<div class="links">
+  <a routerLink="/comments"> Go to Comments </a>
+</div>

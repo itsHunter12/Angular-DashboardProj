@@ -1,1 +1,15 @@
-<p>subscribers-watchtime-chart works!</p>
+<h3>Subscriber and WatchTime history</h3>
+<div class="divider"></div>
+<table>
+  <tr>
+    <td>Total Subscribers</td>
+    <td>{{ getTotalSubs() }}</td>
+  </tr>
+  <tr>
+    <td>Total WatchTime</td>
+    <td>{{ getTotalWatchTime() }}</td>
+  </tr>
+</table>
+<div style="display: block; width: 100%">
+  <canvas baseChart [data]="data" [options]="options" [type]="'bar'"></canvas>
+</div>
